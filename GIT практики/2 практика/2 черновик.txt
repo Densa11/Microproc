@@ -1,0 +1,21 @@
+P1=massiv [11];
+
+for(i=0;i<11;i++) 
+{
+if (P30==1){
+
+i=i+1;
+
+if (i==11)
+i=1;
+}
+if (i==10)
+i=0;
+
+P2=massiv[i]; 
+for(j=0;j<100;j++)
+continue;
+}
+P2=massiv[11]; 
+while(1);
+}

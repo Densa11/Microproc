@@ -1,0 +1,29 @@
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12 
+13 14 15 16
+
+newM
+[1 6 11 16 4 7 10 13]
+ 0 1  2  3 4 5  6  7
+
+
+l2:
+mov ecx,2h
+mov eax,5h
+mov esi,0h
+fld matrix [esi*4]
+fst temp 
+fstp newM[esi*4]
+je P1
+
+P1:
+add ecx,1h
+fld matrix [eax*4]
+fst temp
+mov edi,1h
+add esi,edi
+fstp newM[esi*4]
+add eax,ebx
+cmp ebx,ecx
+jne P1
